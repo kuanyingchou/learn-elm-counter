@@ -25,6 +25,8 @@ view address model =
       [ Html.text (Basics.toString model) ]
     , Html.button [ Html.Events.onClick address Decrement ]
       [ Html.text "-" ]
+    , Html.button [ Html.Events.onClick address Reset ]
+      [ Html.text "Reset" ]
     ]
 
 type Action = Increment | Decrement | Reset
